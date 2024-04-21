@@ -1,0 +1,39 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "UniversityID": {
+        "type": "integer"
+      },
+      "UniversityName": {
+        "type": "string"
+      },
+      "UniversityLocation": {
+        "type": "string"
+      },
+      "UniversityFounded": {
+        "type": "integer"
+      },
+      "KeyPeople": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "age": {
+              "type": "integer"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": ["name", "age", "title"]
+        }
+      }
+    },
+    "required": ["UniversityID", "UniversityName", "UniversityLocation", "UniversityFounded", "KeyPeople"]
+  }
+}

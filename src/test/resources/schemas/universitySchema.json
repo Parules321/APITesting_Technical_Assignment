@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "UniversityID": {
+      "type": "integer",
+      "example": 978
+    },
+    "UniversityName": {
+      "type": "string",
+      "example": "University of Toronto"
+    },
+    "UniversityLocation": {
+      "type": "string",
+      "example": "Toronto, Ontario, Canada"
+    },
+    "UniversityFounded": {
+      "type": "integer",
+      "example": 1965
+    },
+    "KeyPeople": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "John Smith"
+          },
+          "age": {
+            "type": "integer",
+            "example": 45
+          },
+          "title": {
+            "type": "string",
+            "example": "President"
+          }
+        }
+      }
+    }
+  }
+}
